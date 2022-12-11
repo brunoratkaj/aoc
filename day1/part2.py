@@ -4,7 +4,7 @@ import heapq
 def solution():
     h = []
     curr = 0
-    with open('input1.txt', 'r') as f:
+    with open('input.txt', 'r') as f:
         for line in f:
             line = line.strip()
             if line:
@@ -22,8 +22,3 @@ def solution():
 
 if __name__ == '__main__':
     solution()
-
-
-
-
-
