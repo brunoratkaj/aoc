@@ -34,6 +34,7 @@ def compare_pairs(list1, list2):
 
 
 def sort_lists(ans):
+    "Simple bubble sort"
     global TWO_IDX, SIX_IDX
     size = len(ans)
     for i in range(size):
@@ -50,8 +51,6 @@ def sort_lists(ans):
                 elif ans[j + 1] == [[6]]:
                     SIX_IDX = j + 1
                 
-
-
 
 def solution():
     with open('input.txt', 'r') as file:
