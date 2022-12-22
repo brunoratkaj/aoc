@@ -5,12 +5,10 @@ def solution():
             sec1, sec2 = line.split(',')
             x1, y1 = list(map(int, sec1.split('-')))
             x2, y2 = list(map(int, sec2.split('-')))
-            if x1 <= x2:
-                if y1 >= y2:
+            if y1 >= x2 and y1 <= y2:
                     count += 1
                     continue
-            if x1 >= x2:
-                if y1 <= y2:
+            if y2 >= x1 and y2 <= y1:
                     count += 1
         print(count)
 
